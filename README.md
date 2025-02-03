@@ -1,2 +1,3 @@
-# pds-datawarehouse
-a complete pipeline for buiding a data warehouse for postal and delivery system. 
+# Design for a Postal Delivery System: Operational DB, ETL and OLAP Warehouse
+
+
