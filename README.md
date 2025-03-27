@@ -60,20 +60,12 @@ The system follows a traditional on-premises architecture with three main compon
 ```
 postal-delivery-system/
 ├── sql/
-│   ├── op-db-ddl/
-│   │   ├── create statements/
-│   │   └── insert statements/
-│   └── dwh-ddl/
-│       ├── create/
+│   ├── ddl/
+│   └── py-scripts-data-opdb
 ├── diagrams/
 │   ├── op-db/
 │   └── dwh/
-├── etl/
-│   ├── jobs/
-│   └── transformations/
 ├── visualizations/
-│   ├── dashboards/
-│   └── reports/
 └── docs/
     └── technical-documentation/
 ```
