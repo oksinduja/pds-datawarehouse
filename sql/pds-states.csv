@@ -1,0 +1,54 @@
+state_abbr,state_name,country_name
+NY,New York,USA
+CA,California,USA
+IL,Illinois,USA
+FL,Florida,USA
+TX,Texas,USA
+PA,Pennsylvania,USA
+GA,Georgia,USA
+DC,District of Columbia,USA
+MA,Massachusetts,USA
+AZ,Arizona,USA
+MI,Michigan,USA
+WA,Washington,USA
+MN,Minnesota,USA
+CO,Colorado,USA
+NV,Nevada,USA
+MD,Maryland,USA
+MO,Missouri,USA
+OR,Oregon,USA
+PR,Puerto Rico,USA
+IN,Indiana,USA
+OH,Ohio,USA
+NC,North Carolina,USA
+VA,Virginia,USA
+WI,Wisconsin,USA
+RI,Rhode Island,USA
+TN,Tennessee,USA
+UT,Utah,USA
+OK,Oklahoma,USA
+CT,Connecticut,USA
+KY,Kentucky,USA
+LA,Louisiana,USA
+NE,Nebraska,USA
+NM,New Mexico,USA
+SC,South Carolina,USA
+IA,Iowa,USA
+KS,Kansas,USA
+AR,Arkansas,USA
+ID,Idaho,USA
+NJ,New Jersey,USA
+AL,Alabama,USA
+HI,Hawaii,USA
+MS,Mississippi,USA
+AK,Alaska,USA
+ND,North Dakota,USA
+SD,South Dakota,USA
+WV,West Virginia,USA
+MT,Montana,USA
+VT,Vermont,USA
+NH,New Hampshire,USA
+WY,Wyoming,USA
+DE,Delaware,USA
+ME,Maine,USA
+,,USA
