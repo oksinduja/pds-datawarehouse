@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_IQSRcAsdEfCqWajGByovEA" name="us-cities-states-data" dataPackage="_IQSRcQsdEfCqWajGByovEA" Server="Localhost 127.0.0.1" FilePath="/Users/sindujav/Desktop/PLG/Data_Cleaning_and_Transformation_MacLocal/pds-datawarehouse/sql/pds-us-cities.csv" Encoding="US-ASCII" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_IQSRcQsdEfCqWajGByovEA" name="default" dataManager="_IQSRcAsdEfCqWajGByovEA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_IQSRcgsdEfCqWajGByovEA" id="_BGT-EAsdEfCqWajGByovEA" label="us-cities-states-data">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IQS4gAsdEfCqWajGByovEA" label="city" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IQS4gQsdEfCqWajGByovEA" label="city_ascii" length="14" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IQS4ggsdEfCqWajGByovEA" label="state_abbr" length="2" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IQS4gwsdEfCqWajGByovEA" label="state_name" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IQS4hAsdEfCqWajGByovEA" label="county_name" length="20" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IQS4hQsdEfCqWajGByovEA" label="country_name" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

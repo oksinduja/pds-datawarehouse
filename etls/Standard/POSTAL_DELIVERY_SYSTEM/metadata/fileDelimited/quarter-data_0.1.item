@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_-bbm0AFFEfC4Wq95VU2Lpg" name="quarter-data" dataPackage="_-bbm0QFFEfC4Wq95VU2Lpg" Server="Localhost 127.0.0.1" FilePath="/Users/sindujav/Desktop/PLG/Data_Cleaning_and_Transformation_MacLocal/pds-datawarehouse/sql/pds-quarters.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_-bbm0QFFEfC4Wq95VU2Lpg" name="default" dataManager="_-bbm0AFFEfC4Wq95VU2Lpg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-bbm0gFFEfC4Wq95VU2Lpg" id="_4mTmgAFFEfC4Wq95VU2Lpg" label="quarter-data">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-bbm0wFFEfC4Wq95VU2Lpg" label="qtr_no" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-bbm1AFFEfC4Wq95VU2Lpg" label="year_no" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

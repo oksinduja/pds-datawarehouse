@@ -1,0 +1,1672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" hide="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="160" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:nG7vcm9WryZi7IQ1uGmUlq3RTDHL2/SA0L3bxgfu" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="JDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_18" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SJ0etHi0QRNgPWbtn32YvKhdcBOoB7B2IeTLFuWf" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+  </parameters>
+  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="40" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlConnection" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL|ELT/Connections" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlConnection" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/configuration/lib/java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kysrQABXEfCburyQXNQxxw" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sindujav&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NE/hJ9vW4ZEuG/Mm7TJZbeK1/GK7wHsAmkcqazJ9xTANFypEHHJ31Q=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="pds-dwh"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostgresqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="40" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlConnection" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL|ELT/Connections" show="false"/>
+    <elementParameter field="CHECK" name="START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlConnection" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/configuration/lib/java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_OcXtAABYEfCburyQXNQxxw" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postal_delivery_system_db&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;postal_delivery_system_opdb&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sindujav&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UnSIWdNGm7fvppUn6ii6VO/Ct4fpf+HFAIJDAOvJerTaG5Kttb5icg=="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="pds-opdb"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="200" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="true" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/configuration/lib/java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_OcXtAABYEfCburyQXNQxxw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postal_delivery_system_db&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;postal_delivery_system_opdb&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sindujav&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:A6EGV/wOQ5RWz0W087OgQ0soav6n0do1usMhKeArYzuXyX6KFTs2+A=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;deliverytrip&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;with totals as &#xA;(&#xA;select d.dtrip_id,&#xA;min(d2.do_date) as start_date,&#xA;max(d2.do_date) as end_date,&#xA;count(d2.do_id) as total_deliveries,&#xA;min(d2.do_deliveryzipcode)::numeric  as min_zipcode_of_trip,&#xA;max(d2.do_deliveryzipcode)::numeric as max_zipcode_of_trip,&#xA;sum(d2.do_weightinlbsrounded) as total_weight_in_lbs&#xA;from postal_delivery_system_opdb.deliverytrip d &#xA;inner join postal_delivery_system_opdb.deliveryorder d2 on d.dtrip_id = d2.dtrip_id&#xA;group by d.dtrip_id)&#xA;select t.*, &#xA;d.dtrip_deliverypersonid , d.dtrip_truckid ,&#xA;substring(d.gas_cost_per_mile , 2, 5)::numeric as gas_cost_per_mile,&#xA;substring(d3.dp_basesalary, 2, 5)::numeric as base_salary_dp&#xA;from totals t&#xA;inner join postal_delivery_system_opdb.deliverytrip d on t.dtrip_id = d.dtrip_id&#xA;inner join postal_delivery_system_opdb.deliveryperson d3 on d.dtrip_deliverypersonid = d3.dp_empid&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dtrip_id" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_date" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_date" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_deliveries" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="min_zipcode_of_trip" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max_zipcode_of_trip" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_weight_in_lbs" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dtrip_deliverypersonid" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dtrip_truckid" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gas_cost_per_mile" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="base_salary_dp" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="15" name="dtrip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="end_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="min_zipcode_of_trip" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="max_zipcode_of_trip" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="dtrip_deliverypersonid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="dtrip_truckid" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="base_salary_dp" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="400" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_odahsAW2EfC3st73It_rLQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="truck_person_lookup" name="truck_person_lookup">
+      <column comment="" key="false" length="15" name="dtrip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="delivery_person_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="end_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="base_salary" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="0" name="min_zipcode_of_trip" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="max_zipcode_of_trip" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="start_date_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="end_date_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="truck_person_lookup">
+        <mapperTableEntries name="dtrip_id" expression="row1.dtrip_id " type="id_String"/>
+        <mapperTableEntries name="truck_key" expression="row2.truck_key " type="id_Integer"/>
+        <mapperTableEntries name="delivery_person_key" expression="row3.delivery_person_key " type="id_Integer"/>
+        <mapperTableEntries name="gas_cost_per_mile" expression="row1.gas_cost_per_mile " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="start_date" expression="row1.start_date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="end_date" expression="row1.end_date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="total_deliveries" expression="row1.total_deliveries " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="base_salary" expression="row3.base_salary " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="min_zipcode_of_trip" expression="row1.min_zipcode_of_trip " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="max_zipcode_of_trip" expression="row1.max_zipcode_of_trip " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="total_weight_in_lbs" expression="row1.total_weight_in_lbs " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="start_date_key" expression="row8.date_key " type="id_Integer"/>
+        <mapperTableEntries name="end_date_key" expression="row9.date_key " type="id_Integer"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="dtrip_id" type="id_String"/>
+        <mapperTableEntries name="start_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="end_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="total_deliveries" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="min_zipcode_of_trip" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="max_zipcode_of_trip" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="total_weight_in_lbs" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="dtrip_deliverypersonid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="dtrip_truckid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="gas_cost_per_mile" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="base_salary_dp" type="id_Double" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="truck_key" type="id_Integer"/>
+        <mapperTableEntries name="truck_id" expression="row1.dtrip_truckid " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="truck_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="max_wt_in_lbs" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="license_plate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="t_start_date" type="id_Date"/>
+        <mapperTableEntries name="t_end_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="t_is_current" type="id_Boolean"/>
+        <mapperTableEntries name="t_version_number" type="id_Integer"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="delivery_person_key" type="id_Integer"/>
+        <mapperTableEntries name="employee_id" expression="row1.dtrip_deliverypersonid " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="license_no" type="id_String" nullable="true"/>
+        <mapperTableEntries name="can_drive_heavy_truck" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="can_drive_out_state" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="join_date_key" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="base_salary" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="d_start_date" type="id_Date"/>
+        <mapperTableEntries name="d_end_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="d_is_current" type="id_Boolean"/>
+        <mapperTableEntries name="d_version_number" type="id_Integer"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="date_key" type="id_Integer"/>
+        <mapperTableEntries name="full_date" expression="row1.start_date " type="id_Date" nullable="true" operator="="/>
+        <mapperTableEntries name="day_of_the_week" type="id_String" nullable="true"/>
+        <mapperTableEntries name="week_no" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="month_key" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row9" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="date_key" expression="" type="id_Integer"/>
+        <mapperTableEntries name="full_date" expression="row1.end_date " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="day_of_the_week" type="id_String" nullable="true"/>
+        <mapperTableEntries name="week_no" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="month_key" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="240" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/configuration/lib/java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kysrQABXEfCburyQXNQxxw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sindujav&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hxsnl0vobijPFR4RpB1IivEsa7nFB81frCP3UaQdKFXiDCk980dIDQ=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_kysrQABXEfCburyQXNQxxw - dim_deliverytruck" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_deliverytruck&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliverytruck\&quot;.\&quot;truck_key\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliverytruck\&quot;.\&quot;truck_id\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliverytruck\&quot;.\&quot;truck_type\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliverytruck\&quot;.\&quot;max_wt_in_lbs\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliverytruck\&quot;.\&quot;license_plate\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliverytruck\&quot;.\&quot;t_start_date\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliverytruck\&quot;.\&quot;t_end_date\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliverytruck\&quot;.\&quot;t_is_current\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliverytruck\&quot;.\&quot;t_version_number\&quot;&#xA; FROM \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliverytruck\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="truck_key" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="truck_id" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="truck_type" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max_wt_in_lbs" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="license_plate" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="t_start_date" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="t_end_date" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="t_is_current" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="t_version_number" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dim_deliverytruck" name="tDBInput_2">
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="truck_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="truck_type" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="max_wt_in_lbs" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="license_plate" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="t_start_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="t_end_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'true'" key="false" length="1" name="t_is_current" nullable="false" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="t_version_number" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/configuration/lib/java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kysrQABXEfCburyQXNQxxw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sindujav&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FdNnFIdXThzgkaGSs7eCVZ0fD4d/bA4xu8VnkvF6QcO+hFabvDyryA=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_deliveryperson&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;delivery_person_key\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;employee_id\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;license_no\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;can_drive_heavy_truck\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;can_drive_out_state\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;join_date_key\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;base_salary\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;d_start_date\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;d_end_date\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;d_is_current\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;.\&quot;d_version_number\&quot;&#xA; FROM \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_deliveryperson\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="delivery_person_key" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="employee_id" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="license_no" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="can_drive_heavy_truck" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="can_drive_out_state" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="join_date_key" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="base_salary" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="d_start_date" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="d_end_date" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="d_is_current" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="d_version_number" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dim_deliveryperson" name="tDBInput_3">
+      <column comment="" key="true" length="10" name="delivery_person_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="employee_id" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="license_no" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="can_drive_heavy_truck" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="1" name="can_drive_out_state" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="join_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="base_salary" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="d_start_date" nullable="false" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="d_end_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'true'" key="false" length="1" name="d_is_current" nullable="false" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="d_version_number" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="560" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dtrip_id" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="truck_key" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="delivery_person_key" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gas_cost_per_mile" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_date" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_date" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_deliveries" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="base_salary" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="min_zipcode_of_trip" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max_zipcode_of_trip" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_weight_in_lbs" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_date_key" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_date_key" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="truck_person_lookup" name="tLogRow_1">
+      <column comment="" key="false" length="15" name="dtrip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="delivery_person_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="end_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="0" name="base_salary" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="" key="false" length="0" name="min_zipcode_of_trip" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="0" name="max_zipcode_of_trip" nullable="true" pattern="" precision="0" sourceType="FLOAT8" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="start_date_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="end_date_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="720" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaFlex_1" show="false"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#xA;Double totalPayForDP = 0.0;&#xA;Double totalGasCost = 0.0;&#xA;Double totalDistance = 0.0;&#xA;Double totalCost = 0.0;   "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#xA;// a piece of code executed in the row&#xA;// loop&#xA;Double zipdiff = row4.max_zipcode_of_trip - row4.min_zipcode_of_trip;&#xA;totalDistance = zipdiff * 0.005; &#xA;totalGasCost = totalDistance * row4.gas_cost_per_mile;&#xA;Double deliveryCommission = row4.total_deliveries * 1.25; // $1.25 per delivery&#xA;totalPayForDP = row4.base_salary + deliveryCommission;&#xA;totalCost = totalPayForDP + totalGasCost;&#xA;&#xA;row5.totalDistance = totalDistance;&#xA;row5.totalGasCost = totalGasCost;&#xA;row5.totalPayForDP = totalPayForDP;&#xA;row5.totalCost = totalCost;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#xA;System.out.println(&quot; Total Distance, Gas Cost and Payment for Delivery Person calculated&quot;);&#xA;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" value="false" show="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" value="true" show="false"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_1">
+      <column comment="" key="false" length="15" name="dtrip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="delivery_person_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="end_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalDistance" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalGasCost" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalPayForDP" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalCost" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="start_date_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="end_date_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="840" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_2" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false" show="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false" show="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="dtrip_id" id="0"/>
+      <elementValue elementRef="LENGTH" value="10" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="truck_key" id="2"/>
+      <elementValue elementRef="LENGTH" value="10" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="delivery_person_key" id="4"/>
+      <elementValue elementRef="LENGTH" value="10" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gas_cost_per_mile" id="6"/>
+      <elementValue elementRef="LENGTH" value="10" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_date" id="8"/>
+      <elementValue elementRef="LENGTH" value="10" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_date" id="10"/>
+      <elementValue elementRef="LENGTH" value="10" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_deliveries" id="12"/>
+      <elementValue elementRef="LENGTH" value="10" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalDistance" id="14"/>
+      <elementValue elementRef="LENGTH" value="10" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalGasCost" id="16"/>
+      <elementValue elementRef="LENGTH" value="10" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_weight_in_lbs" id="18"/>
+      <elementValue elementRef="LENGTH" value="10" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalPayForDP" id="20"/>
+      <elementValue elementRef="LENGTH" value="10" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="totalCost" id="22"/>
+      <elementValue elementRef="LENGTH" value="10" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="start_date_key" id="24"/>
+      <elementValue elementRef="LENGTH" value="10" id="25"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="end_date_key" id="26"/>
+      <elementValue elementRef="LENGTH" value="10" id="27"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_2">
+      <column comment="" key="false" length="15" name="dtrip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="delivery_person_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="start_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="end_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalDistance" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalGasCost" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="19" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="INT8" type="id_Long" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalPayForDP" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="totalCost" nullable="true" pattern="" precision="-1" sourceType="" type="id_Double" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="true" length="10" name="start_date_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="end_date_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="960" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_odahsAW2EfC3st73It_rLQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fact_deliverytrip" name="insert">
+      <column comment="" defaultValue="0" key="true" length="-1" name="trip_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="trip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="dperson_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_start_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_end_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_distance_in_miles" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_pay_for_dp" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_gas_cost" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_cost_of_trip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="FLOW" label="fact_deliverytrip" name="update">
+      <column comment="" defaultValue="nextval('postal_delivery_system_dwh.fact_deliverytrip_trip_key_seq'::regclass)" key="true" length="10" name="trip_key" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="trip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="dperson_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_start_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_end_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_distance_in_miles" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_pay_for_dp" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_gas_cost" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_cost_of_trip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="insert" activateCondensedTool="true" rejectInnerJoin="true">
+        <mapperTableEntries name="trip_key" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="trip_id" expression="row6.dtrip_id " type="id_String"/>
+        <mapperTableEntries name="truck_key" expression="row6.truck_key" type="id_Integer"/>
+        <mapperTableEntries name="dperson_key" expression="row6.delivery_person_key " type="id_Integer"/>
+        <mapperTableEntries name="gas_cost_per_mile" expression="row6.gas_cost_per_mile " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="trip_start_date_key" expression="row6.start_date_key " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="trip_end_date_key" expression="row6.end_date_key " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="total_deliveries" expression="row6.total_deliveries " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="total_distance_in_miles" expression="row6.totalDistance " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="total_weight_in_lbs" expression="row6.total_weight_in_lbs " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="total_pay_for_dp" expression="row6.totalPayForDP " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="total_gas_cost" expression="row6.totalGasCost " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="total_cost_of_trip" expression="row6.totalCost " type="id_Double" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="update">
+        <mapperTableEntries name="trip_key" expression="row7.trip_key " type="id_Integer"/>
+        <mapperTableEntries name="trip_id" expression="row7.trip_id " type="id_String"/>
+        <mapperTableEntries name="truck_key" expression="row7.truck_key " type="id_Integer"/>
+        <mapperTableEntries name="dperson_key" expression="row7.dperson_key " type="id_Integer"/>
+        <mapperTableEntries name="gas_cost_per_mile" expression="row6.gas_cost_per_mile " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="trip_start_date_key" expression="row6.start_date_key" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="trip_end_date_key" expression="row6.end_date_key" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="total_deliveries" expression="row6.total_deliveries " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="total_distance_in_miles" expression="row6.totalDistance " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="total_weight_in_lbs" expression="row6.total_weight_in_lbs " type="id_Long" nullable="true"/>
+        <mapperTableEntries name="total_pay_for_dp" expression="row6.totalPayForDP " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="total_gas_cost" expression="row6.totalGasCost " type="id_Double" nullable="true"/>
+        <mapperTableEntries name="total_cost_of_trip" expression="row6.totalCost " type="id_Double" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="dtrip_id" type="id_String"/>
+        <mapperTableEntries name="truck_key" type="id_Integer"/>
+        <mapperTableEntries name="delivery_person_key" type="id_Integer"/>
+        <mapperTableEntries name="gas_cost_per_mile" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="start_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="end_date" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="total_deliveries" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="totalDistance" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="totalGasCost" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="total_weight_in_lbs" type="id_Long" nullable="true"/>
+        <mapperTableEntries name="totalPayForDP" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="totalCost" type="id_Double" nullable="true"/>
+        <mapperTableEntries name="start_date_key" type="id_Integer"/>
+        <mapperTableEntries name="end_date_key" type="id_Integer"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row7" activateCondensedTool="true" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="trip_key" type="id_Integer"/>
+        <mapperTableEntries name="trip_id" expression="row6.dtrip_id " type="id_String" operator="="/>
+        <mapperTableEntries name="truck_key" expression="row6.truck_key " type="id_Integer" operator="="/>
+        <mapperTableEntries name="dperson_key" expression="row6.delivery_person_key " type="id_Integer" operator="="/>
+        <mapperTableEntries name="gas_cost_per_mile" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="trip_start_date_key" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="trip_end_date_key" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="total_deliveries" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="total_distance_in_miles" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="total_weight_in_lbs" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="total_pay_for_dp" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="total_gas_cost" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="total_cost_of_trip" type="id_BigDecimal" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="960" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/configuration/lib/java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kysrQABXEfCburyQXNQxxw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sindujav&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:dWQRrzjj9F4nF3xWEnMqW7yXsqqcKSa1NkqGbTLf2hNfYKk/8CYgWg=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_kysrQABXEfCburyQXNQxxw - fact_deliverytrip" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;fact_deliverytrip&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;trip_key\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;trip_id\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;truck_key\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;dperson_key\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;gas_cost_per_mile\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;trip_start_date_key\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;trip_end_date_key\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;total_deliveries\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;total_distance_in_miles\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;total_weight_in_lbs\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;total_pay_for_dp\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;total_gas_cost\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;.\&quot;total_cost_of_trip\&quot;&#xA; FROM \&quot;postal_delivery_system_dwh\&quot;.\&quot;fact_deliverytrip\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_key" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_id" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="truck_key" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dperson_key" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gas_cost_per_mile" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_start_date_key" id="10"/>
+      <elementValue elementRef="TRIM" value="false" id="11"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_end_date_key" id="12"/>
+      <elementValue elementRef="TRIM" value="false" id="13"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_deliveries" id="14"/>
+      <elementValue elementRef="TRIM" value="false" id="15"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_distance_in_miles" id="16"/>
+      <elementValue elementRef="TRIM" value="false" id="17"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_weight_in_lbs" id="18"/>
+      <elementValue elementRef="TRIM" value="false" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_pay_for_dp" id="20"/>
+      <elementValue elementRef="TRIM" value="false" id="21"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_gas_cost" id="22"/>
+      <elementValue elementRef="TRIM" value="false" id="23"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_cost_of_trip" id="24"/>
+      <elementValue elementRef="TRIM" value="false" id="25"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fact_deliverytrip" name="tDBInput_4">
+      <column comment="" defaultValue="nextval('postal_delivery_system_dwh.fact_deliverytrip_trip_key_seq'::regclass)" key="true" length="10" name="trip_key" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="trip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="dperson_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_start_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_end_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_distance_in_miles" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_pay_for_dp" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_gas_cost" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_cost_of_trip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="-80">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_1" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlOutput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlOutput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/configuration/lib/java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kysrQABXEfCburyQXNQxxw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sindujav&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6vl8+9w7epk06d3S4RuQwxKvcUc+6tzG0tl88GegbxPmDpGJEsjFeQ=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;fact_deliverytrip&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS">
+      <elementValue elementRef="NAME" value="&quot;trip_key&quot;" id="0"/>
+      <elementValue elementRef="DATATYPE" value="VARCHAR(50)" id="1"/>
+      <elementValue elementRef="SQL" value="&quot;nextval('postal_delivery_system_dwh.fact_deliverytrip_trip_key_seq'::regclass)&quot;" id="2"/>
+      <elementValue elementRef="POS" value="REPLACE" id="3"/>
+      <elementValue elementRef="REFCOL" value="trip_key" id="4"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_key" id="0"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_id" id="5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="truck_key" id="10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dperson_key" id="15"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gas_cost_per_mile" id="20"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_start_date_key" id="25"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="28"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_end_date_key" id="30"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_deliveries" id="35"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="38"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_distance_in_miles" id="40"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="41"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="42"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="43"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_weight_in_lbs" id="45"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="46"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="47"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="48"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_pay_for_dp" id="50"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="51"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="52"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="53"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="54"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_gas_cost" id="55"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="56"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="57"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="58"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_cost_of_trip" id="60"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="61"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="62"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="63"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="64"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fact_deliverytrip" name="tDBOutput_1">
+      <column comment="" defaultValue="0" key="true" length="-1" name="trip_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="trip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="dperson_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_start_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_end_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_distance_in_miles" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_pay_for_dp" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_gas_cost" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_cost_of_trip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="fact_deliverytrip" name="REJECT">
+      <column comment="" defaultValue="0" key="true" length="-1" name="trip_key" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="15" name="trip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="dperson_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_start_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_end_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_distance_in_miles" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_pay_for_dp" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_gas_cost" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_cost_of_trip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1080" posY="120">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBOutput_2" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlOutput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="true" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlOutput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/configuration/lib/java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kysrQABXEfCburyQXNQxxw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sindujav&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ecKyy+8Y5Ysg4fzpkWF1eOvmOKEeeSjlAG8IiI6km+OqGrVZVEe2gg=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;fact_deliverytrip&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="CHECK" name="USE_SPATIAL_OPTIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="SPATIAL_INDEX" value="false" show="false"/>
+    <elementParameter field="CHECK" name="GEOMETRY_COLUMNS" value="false" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="CHECK" name="USE_ALTERNATE_SCHEMA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ALTERNATE_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="SAVE_POINT" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_key" id="0"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="1"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="2"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="3"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="4"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_id" id="5"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="6"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="7"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="8"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="9"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="truck_key" id="10"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="11"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="12"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="13"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="14"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="dperson_key" id="15"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="16"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="17"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="18"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="19"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="gas_cost_per_mile" id="20"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="21"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="22"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="23"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="24"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_start_date_key" id="25"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="26"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="27"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="28"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="29"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="trip_end_date_key" id="30"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="31"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="32"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="33"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="34"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_deliveries" id="35"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="36"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="37"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="38"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="39"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_distance_in_miles" id="40"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="41"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="42"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="43"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="44"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_weight_in_lbs" id="45"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="46"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="47"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="48"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="49"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_pay_for_dp" id="50"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="51"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="52"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="53"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="54"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_gas_cost" id="55"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="56"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="57"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="58"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="59"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_cost_of_trip" id="60"/>
+      <elementValue elementRef="UPDATE_KEY" value="false" id="61"/>
+      <elementValue elementRef="DELETE_KEY" value="false" id="62"/>
+      <elementValue elementRef="UPDATABLE" value="true" id="63"/>
+      <elementValue elementRef="INSERTABLE" value="true" id="64"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_LOWERCASE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="fact_deliverytrip" name="tDBOutput_2">
+      <column comment="" defaultValue="nextval('postal_delivery_system_dwh.fact_deliverytrip_trip_key_seq'::regclass)" key="true" length="10" name="trip_key" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="trip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="dperson_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_start_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_end_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_distance_in_miles" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_pay_for_dp" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_gas_cost" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_cost_of_trip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <metadata connector="REJECT" label="fact_deliverytrip" name="REJECT">
+      <column comment="" defaultValue="nextval('postal_delivery_system_dwh.fact_deliverytrip_trip_key_seq'::regclass)" key="true" length="10" name="trip_key" nullable="false" pattern="" precision="0" sourceType="SERIAL" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="15" name="trip_id" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="truck_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="true" length="10" name="dperson_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="gas_cost_per_mile" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_start_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="trip_end_date_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_deliveries" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_distance_in_miles" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_weight_in_lbs" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Long" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_pay_for_dp" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_gas_cost" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="0" name="total_cost_of_trip" nullable="true" pattern="" precision="0" sourceType="NUMERIC" type="id_Double" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="560" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_5" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/configuration/lib/java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kysrQABXEfCburyQXNQxxw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sindujav&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VpYl4r7tRqsfU+qU4vd4IVqABJYO/hMv3AgQiiSHItXNxlOzAwvLmg=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_kysrQABXEfCburyQXNQxxw - dim_date" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_date&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;.\&quot;date_key\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;.\&quot;full_date\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;.\&quot;day_of_the_week\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;.\&quot;week_no\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;.\&quot;month_key\&quot;&#xA; FROM \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_key" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="full_date" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="day_of_the_week" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="week_no" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month_key" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dim_date" name="tDBInput_5">
+      <column comment="" key="true" length="10" name="date_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="full_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="day_of_the_week" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="week_no" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="month_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPostgresqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="440" posY="200">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_6" show="false"/>
+    <elementParameter field="TEXT" name="COMPONENT_NAME" value="tPostgresqlInput" show="false"/>
+    <elementParameter field="TEXT" name="VERSION" value="0.102 (ALPHA)" show="false"/>
+    <elementParameter field="TEXT" name="FAMILY" value="Databases/DB Specifics/PostgreSQL" show="false"/>
+    <elementParameter field="CHECK" name="START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="STARTABLE" value="true" show="false"/>
+    <elementParameter field="CHECK" name="SUBTREE_START" value="false" show="false"/>
+    <elementParameter field="CHECK" name="END_OF_FLOW" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HELP" value="org.talend.help.tPostgresqlInput" show="false"/>
+    <elementParameter field="DIRECTORY" name="IREPORT_PATH" value="" show="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="/Users/sindujav/Downloads/Talend-Studio-20240527_1700-V8.0.1/configuration/lib/java" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_kysrQABXEfCburyQXNQxxw" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="V9_X"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="POSTGRESQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;5432&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;postal_delivery_system_dwh&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;sindujav&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:8PDKqA9S0kg6qwJAjxWkRjWAl5F6q3i3FgngQQnqfQe/nKw2VIqhiQ=="/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_kysrQABXEfCburyQXNQxxw - dim_date" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;dim_date&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;.\&quot;date_key\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;.\&quot;full_date\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;.\&quot;day_of_the_week\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;.\&quot;week_no\&quot;, &#xA;  \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;.\&quot;month_key\&quot;&#xA; FROM \&quot;postal_delivery_system_dwh\&quot;.\&quot;dim_date\&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="postgres_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_key" id="0"/>
+      <elementValue elementRef="TRIM" value="false" id="1"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="full_date" id="2"/>
+      <elementValue elementRef="TRIM" value="false" id="3"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="day_of_the_week" id="4"/>
+      <elementValue elementRef="TRIM" value="false" id="5"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="week_no" id="6"/>
+      <elementValue elementRef="TRIM" value="false" id="7"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="month_key" id="8"/>
+      <elementValue elementRef="TRIM" value="false" id="9"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="dim_date" name="tDBInput_6">
+      <column comment="" key="true" length="10" name="date_key" nullable="false" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="13" name="full_date" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="20" name="day_of_the_week" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="week_no" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="10" name="month_key" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk2" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="truck_person_lookup" lineStyle="0" metaname="truck_person_lookup" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tLogRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="end_date" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="total_deliveries" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+      <elementValue elementRef="TRACE_COLUMN" value="base_salary" id="6"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="7"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="8"/>
+      <elementValue elementRef="TRACE_COLUMN" value="start_date" id="9"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="10"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="11"/>
+      <elementValue elementRef="TRACE_COLUMN" value="min_zipcode_of_trip" id="12"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="13"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="14"/>
+      <elementValue elementRef="TRACE_COLUMN" value="max_zipcode_of_trip" id="15"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="16"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="17"/>
+      <elementValue elementRef="TRACE_COLUMN" value="total_weight_in_lbs" id="18"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="19"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="20"/>
+      <elementValue elementRef="TRACE_COLUMN" value="end_date_key" id="21"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="22"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="23"/>
+      <elementValue elementRef="TRACE_COLUMN" value="start_date_key" id="24"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="25"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="26"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="truck_person_lookup" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tLogRow_1" offsetLabelX="0" offsetLabelY="0" source="tLogRow_1" target="tJavaFlex_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="tLogRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="end_date_key" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+      <elementValue elementRef="TRACE_COLUMN" value="start_date_key" id="3"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="4"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="5"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogRow_2" offsetLabelX="0" offsetLabelY="0" source="tLogRow_2" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="insert" lineStyle="0" metaname="insert" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tMap_2" target="tDBOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="trip_key" id="0"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true" id="1"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value="" id="2"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="insert" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="update" lineStyle="0" metaname="update" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tMap_2" target="tDBOutput_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="update" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="8" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="8" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="8" metaname="tDBInput_6" offsetLabelX="0" offsetLabelY="0" source="tDBInput_6" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="255;255;255" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="47;47;47"/>
+  </subjob>
+</talendfile:ProcessType>

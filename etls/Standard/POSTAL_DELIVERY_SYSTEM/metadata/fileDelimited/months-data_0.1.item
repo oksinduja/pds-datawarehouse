@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_Z4v6wAFKEfC4Wq95VU2Lpg" name="months-data" id="_Z4uFkAFKEfC4Wq95VU2Lpg" dataPackage="_Z4v6wQFKEfC4Wq95VU2Lpg" Server="Localhost 127.0.0.1" FilePath="/Users/sindujav/Desktop/PLG/Data_Cleaning_and_Transformation_MacLocal/pds-datawarehouse/sql/pds-months.csv" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FirstLineCaption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_Z4v6wQFKEfC4Wq95VU2Lpg" name="default" dataManager="_Z4v6wAFKEfC4Wq95VU2Lpg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_Z4v6wgFKEfC4Wq95VU2Lpg" id="_WcnyIAFKEfC4Wq95VU2Lpg" label="months-data">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z4v6wwFKEfC4Wq95VU2Lpg" label="month_no" length="2" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z4v6xAFKEfC4Wq95VU2Lpg" label="month_name" length="9" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z4v6xQFKEfC4Wq95VU2Lpg" label="quarter_no" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_Z4v6xgFKEfC4Wq95VU2Lpg" label="year_no" length="4" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
