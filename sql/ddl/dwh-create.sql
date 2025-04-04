@@ -110,10 +110,10 @@ CREATE TABLE postal_delivery_system_dwh.dim_storewarehouse (
 	wh_worker_count int4 NULL,
 	supervisor_id varchar(30) NULL,
 	supervisor_name varchar(255) NULL,
-	w_start_date date NOT NULL,
-	w_end_date date NULL,
-	w_is_current bool DEFAULT true NOT NULL,
-	w_version_number int4 NOT NULL,
+	previous_wh_capacity int4, 
+    previous_wh_worker_count int4, 
+    previous_supervisor_id varchar(30), 
+    previous_supervisor_name varchar(30), 
 	CONSTRAINT dim_storewarehouse_pkey PRIMARY KEY (warehouse_key),
 	CONSTRAINT dim_storewarehouse_store_key_fkey FOREIGN KEY (store_key) REFERENCES postal_delivery_system_dwh.dim_storeclient(client_key) ON DELETE CASCADE ON UPDATE CASCADE
 );
